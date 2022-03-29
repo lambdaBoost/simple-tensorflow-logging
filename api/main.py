@@ -15,6 +15,7 @@ db = []
 class Item(BaseModel):
     data: dict
     epoch: int
+    total_epochs: int
 
 
 
