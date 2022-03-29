@@ -6,11 +6,11 @@ Created on Mon Mar 28 22:46:13 2022
 from keras.callbacks import Callback
 import requests
 
-class remoteLog(Callback):
+class remoteLog(Callback, api_root, api_path):
     
     def __init__(self,
-               root='http://localhost:9000',
-               path='/publish/epoch/end/',
+               root=api_root,
+               path=api_path,
                field='data',
                headers=None,
                send_as_json=False):
