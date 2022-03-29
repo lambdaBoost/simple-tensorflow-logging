@@ -5,12 +5,11 @@ Created on Sun Mar 27 19:44:42 2022
 @author: Alex
 """
 
-from typing import Optional
-import requests
+
 from fastapi import FastAPI
 from pydantic import BaseModel
-from flask import request
-import json
+
+
 db = []
 
 class Item(BaseModel):
